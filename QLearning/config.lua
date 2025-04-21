@@ -25,16 +25,16 @@ return {
     rewards = {
         goal = 100,             -- Phần thưởng khi tới đích
         step = -0.1,            -- Phạt cho mỗi bước đi
-        -- wall = -10,          -- (Tùy chọn) Phạt nếu cho phép đâm tường
+        wall = -10,             -- (Tùy chọn) Phạt nếu cho phép đâm tường
     },
 
     -- Cấu hình hiển thị và điều khiển
     visualization = {
-        initial_speed = 500,      -- Tốc độ mô phỏng ban đầu (bước/frame)
+        initial_speed = 1000,      -- Tốc độ mô phỏng ban đầu (bước/frame)
         show_help_default = true,
         show_q_default = true,
-        path_width_factor = 1/7, -- Độ rộng đường đi = cell_size * factor
-        agent_size_factor = 0.2, -- Kích thước agent = cell_size * factor
+        path_width_factor = 1/5, -- Độ rộng đường đi = cell_size * factor
+        agent_size_factor = 0.3, -- Kích thước agent = cell_size * factor
     },
 
     -- (Tùy chọn) Cấu hình điểm bắt đầu/kết thúc

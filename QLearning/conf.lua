@@ -22,22 +22,22 @@ function love.conf(t)
     t.window.y = nil                    -- Vị trí cửa sổ Y
 
     -- Các modules không dùng đến có thể tắt đi để giảm thời gian load (tùy chọn)
-    t.modules.audio = true
+    t.modules.audio = false
     t.modules.data = true
     t.modules.event = true
     t.modules.font = true
     t.modules.graphics = true
-    t.modules.image = true
+    t.modules.image = false
     t.modules.joystick = false -- Tắt nếu không dùng joystick
     t.modules.keyboard = true
     t.modules.math = true
-    t.modules.mouse = true
+    t.modules.mouse = false
     t.modules.physics = false -- Tắt nếu không dùng physics
-    t.modules.sound = true
+    t.modules.sound = false
     t.modules.system = true
     t.modules.thread = false -- Tắt nếu không dùng thread
     t.modules.timer = true
-    t.modules.touch = true
+    t.modules.touch = false
     t.modules.video = false -- Tắt nếu không dùng video
     t.modules.window = true
 end
