@@ -4,9 +4,9 @@
 return {
     -- Cấu hình mê cung
     maze = {
-        width = 15,             -- Số ô theo chiều ngang
-        height = 15,            -- Số ô theo chiều dọc
-        cell_size = 20,         -- Kích thước mỗi ô (pixel logic)
+        width = 20,             -- Số ô theo chiều ngang
+        height = 20,            -- Số ô theo chiều dọc
+        cell_size = 25,         -- Kích thước mỗi ô (pixel logic)
         wall_thickness = 1,     -- Độ dày tường vẽ (pixel logic)
     },
 

@@ -1,10 +1,10 @@
 -- conf.lua
 function love.conf(t)
     t.identity = "q_learning_maze"      -- Tên định danh cho game (dùng cho thư mục save)
-    t.version = "11.4"                  -- Phiên bản LÖVE tương thích
+    t.version = "11.5"                  -- Phiên bản LÖVE tương thích
     t.console = true                    -- Bật console (hữu ích để debug)
 
-    t.window.title = "Maze Q-Learning (Configurable)" -- Tiêu đề cửa sổ
+    t.window.title = "Maze Q-Learning" -- Tiêu đề cửa sổ
     t.window.icon = nil                 -- Đường dẫn tới file icon (nếu có)
     t.window.width = 800                -- Chiều rộng cửa sổ ban đầu (sẽ bị ghi đè bởi main.lua dựa trên config)
     t.window.height = 600               -- Chiều cao cửa sổ ban đầu
