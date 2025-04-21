@@ -49,11 +49,15 @@ local showHelp, showQValues, isPaused
 local algorithmSpeed
 local grid, qTable, agent, learnedPath, currentEpisode, currentEpsilon, maxQValueRange
 
+local fontMain
 -- ================================================================
 --                        LOVE CALLBACKS
 -- ================================================================
 
 function love.load()
+    -- Load font
+    fontMain = love.graphics.newFont("fonts/ShareTechMono-Regular.ttf", 13)
+    love.graphics.setFont(fontMain)
     -- Thiết lập các biến toàn cục từ Config đã load
     GRID_WIDTH = Config.maze.width
     GRID_HEIGHT = Config.maze.height
@@ -549,7 +553,7 @@ function drawInfoText()
     love.graphics.print(qValueText, 10, yPos + 30)
 
     if showHelp then
-         local helpText = "G: New Maze | T: Start Train | P: Pause/Resume | R: Show Path | +/-: Speed | Q: QColors | H: Help"
-         love.graphics.print(helpText, 10, yPos + 45)
+        love.graphics.print("Keys: G=New | T=Train | P=Pause | R=Path", 10, yPos + 45)
+        love.graphics.print("+/-=Speed | Q=QVals | H=Help", 10, yPos + 60)
     end
 end
