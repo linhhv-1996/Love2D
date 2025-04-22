@@ -4,8 +4,8 @@
 return {
     -- Cấu hình mê cung
     maze = {
-        width = 7,
-        height = 7,
+        width = 8,
+        height = 8,
         -- cell_size = 35,         
         wall_thickness = 1,
     },

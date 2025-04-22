@@ -33,7 +33,7 @@ Config.visualization.agent_size_factor = Config.visualization.agent_size_factor 
 math.randomseed(os.time())
 
 -- Layout constants (Ví dụ cho cửa sổ 1280x720)
-local WINDOW_WIDTH = 1280
+local WINDOW_WIDTH = 1300
 local WINDOW_HEIGHT = 720
 local INFO_AREA_HEIGHT = 0 -- Tạm thời không cần info area riêng
 local AVAILABLE_HEIGHT = WINDOW_HEIGHT - INFO_AREA_HEIGHT
@@ -42,7 +42,7 @@ local AVAILABLE_HEIGHT = WINDOW_HEIGHT - INFO_AREA_HEIGHT
 local GRID_WIDTH, GRID_HEIGHT
 local Q_CELL_SIZE -- Kích thước ô nhỏ bên trái (10x10 grid)
 local CELL_SIZE   -- Kích thước ô lớn bên phải (5x5 grid, = 2 * Q_CELL_SIZE)
-local Q_GRID_DIM = 14 -- Kích thước grid hiển thị Q-Table (10x10)
+local Q_GRID_DIM = 16 -- Kích thước grid hiển thị Q-Table (10x10)
 local Q_TABLE_PANEL_WIDTH
 local SIM_START_X
 
@@ -78,7 +78,7 @@ function love.load()
     GRID_HEIGHT = Config.maze.height or 5
     WALL_THICKNESS = Config.maze.wall_thickness or 1
 
-    Q_CELL_SIZE = 45
+    Q_CELL_SIZE = 40
     CELL_SIZE = 2 * Q_CELL_SIZE -- Kích thước ô mô phỏng = 2 * ô Q-table
     Q_TABLE_PANEL_WIDTH = Q_GRID_DIM * Q_CELL_SIZE
     SIM_START_X = Q_TABLE_PANEL_WIDTH
